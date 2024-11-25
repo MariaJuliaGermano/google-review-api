@@ -22,7 +22,7 @@ def open_google_maps(location):
 
 def click_reviews(driver):
     try:
-        reviews_button = driver.find_elements(By.XPATH, "//button[contains(@aria-label, 'reviews)]")
+        reviews_button = driver.find_element(By.XPATH, "//button[contains(@aria-label, 'reviews')]")
         reviews_button.click()
         sleep(5)
     except Exception as e:
